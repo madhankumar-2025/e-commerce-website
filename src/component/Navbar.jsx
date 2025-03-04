@@ -51,7 +51,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: '#1a237e' }}>
+    <AppBar position="static" style={{ backgroundColor: 'darkcyan' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -162,7 +162,7 @@ function Navbar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={() => handleCloseUserMenu(setting)}>
-                  <Typography sx={{ textAlign: 'center', color: 'black' }}>{setting}</Typography>
+                  <Typography sx={{ textAlign: 'center', color: 'white' }}>{setting}</Typography>
                 </MenuItem>
               ))}
             </Menu>

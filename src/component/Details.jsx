@@ -19,16 +19,6 @@ const StyledCardMedia = styled(CardMedia)({
   position: "relative"
 });
 
-const PriceTag = styled(Typography)({
-  position: "absolute",
-  top: 16,
-  right: 16,
-  background: "rgba(0, 0, 0, 0.8)",
-  color: "#fff",
-  padding: "4px 8px",
-  borderRadius: 4
-});
-
 const Details = () => {
 
 
@@ -40,22 +30,43 @@ const Details = () => {
       id: 1,
       imageSrc: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
       productName: "Premium Headphones",
-      productPrice: 299.99,
+      productPrice: 299,
       productDescription: "High-quality wireless headphones with noise cancellation feature"
     },
     {
       id: 2,
       imageSrc: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
       productName: "Sport Shoes",
-      productPrice: 149.99,
+      productPrice: 149,
       productDescription: "Comfortable athletic shoes perfect for running and training"
     },
     {
       id: 3,
       imageSrc: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
       productName: "Smart Watch",
-      productPrice: 199.99,
+      productPrice: 199,
       productDescription: "Modern smartwatch with health tracking capabilities"
+    },
+    {
+      id: 4,
+      imageSrc: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+      productName: "Chain braacelet",
+      productPrice: 695,
+      productDescription: "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet"
+    },
+    {
+      id: 5,
+      imageSrc: "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+      productName: "Solid Gold Petite Micropave",
+      productPrice: 168,
+      productDescription: "Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed."
+    },
+    {
+      id: 6,
+      imageSrc: "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+      productName: "3-in-1 Snowboard Jacket Winter Coats",
+      productPrice: 250,
+      productDescription: "The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester"
     }
   ];
 
@@ -73,9 +84,7 @@ const Details = () => {
                   title={products.productName}
                   alt={products.productName}
                 />
-                <PriceTag variant="subtitle1">
-                  ${products.productPrice}
-                </PriceTag>
+                
                 
               </Box>
               <CardContent sx={{ flexGrow: 1 }}>
@@ -87,6 +96,7 @@ const Details = () => {
                 >
                   {products.productName}
                 </Typography>
+                
                 <Typography
                   variant="body2"
                   color="text.secondary"

@@ -39,10 +39,10 @@ const StyledButton = styled(Button)(({ theme }) => ({
   fontSize: "1.1rem",
   transition: "all 0.3s ease",
   alignItems: "center",
-  backgroundColor:"#ff4081",
+  backgroundColor:"darkcyan",
   "&:hover": {
     transform: "translateY(-2px)",
-    boxShadow: "0 8px 15px rgba(0,0,0,0.2)"
+    boxShadow: "0 8px 15px rgba(5, 6, 10, 0.2)"
   }
 }));
 
