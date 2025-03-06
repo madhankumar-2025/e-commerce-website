@@ -7,14 +7,9 @@ import About from "./component/About";
 import Star from "./component/Star";
 import Contact from "./component/Contact";
 import Order from "./component/Order"
-import Purchase from './component/Purchase'
+
 
 function App() {
- 
-  
-
-
-
 
   
   return (
@@ -27,7 +22,6 @@ function App() {
           <Route path="star" element={<Star />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="Purchase" element={<Purchase/>}/>
           <Route path="/order" element={<Order />} />
         </Routes>
       </BrowserRouter>

@@ -42,9 +42,9 @@ const PriceTag = styled(Typography)(() => ({
   fontWeight: "bold",
 }));
 
-const RatingStars = ({ rating }) => {
+const RatingStars = ( ) => {
   const maxRating = 5;
-  const filledStars = Array(Math.round(rating)).fill(true);
+  const filledStars = Array(Math.round).fill(true);
   const emptyStars = Array(maxRating - filledStars.length).fill(false);
 
   return (
